@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Calculator</title>
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- vanilla css link  -->
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+
+<body>
+  <header>
+    <h1 class="title">Finance Calculator</h1>
+  </header>
+
+  <main>
+    <!-- calculation section -->
+    <section class="finance-calc-sec">
+      <div class="container">
+        <div class="visual">
+          <!-- <img src="./asset/image/calculator .jpg" alt=""> -->
+        </div>
+
+        <!--  -->
+        <div class="content">
+          <div class="income">
+            <h3>Income</h3>
+
+            <div class="form-control">
+              <label for="Income">Income:</label>
+              <input type="number" name="" id="income-input" value = 0>
+              <small class="error-msg-container" id="error-msg-income">hello</small>
+            </div>
+          </div>
+
+          <div class="expenses">
+            <h3>Expenses</h3>
+
+            <div class="form-control">
+              <label for="food-cost">Food:</label>
+              <input type="number" name="food-cost" id="food-cost" value = 0>
+              <small class="error-msg-container" id="error-msg-food">hello</small>
+            </div>
+
+            <div class="form-control">
+              <label for="rent-cost">Rent:</label>
+              <input type="number" name="rent-cost" id="rent-cost" value = 0>
+              <small class="error-msg-container" id="error-msg-rent">hello</small>
+            </div>
+
+            <div class="form-control">
+              <label for="clothes-cost">Clothes:</label>
+              <input type="number" name="clothes-cost" id="clothes-cost" value = 0>
+              <small class="error-msg-container" id="error-msg-clothes">hello</small>
+            </div>
+          </div>
+
+          <button class="btn-calculate" id="calculate-btn">Calculate</button>
+
+          <div class="total">
+            <h4>Total expenses: <span id="total-expenses">0</span></h4>
+            <small class="error-msg-container" id="error-msg-expenses">hello</small>
+            <h4>Balance: <span id="balance">0</span></h4>
+            <!-- <small class="error-msg-container" id="error-msg">hello</small> -->
+          </div>
+
+          <div class="saving">
+            <div class="cont">
+              <label for="save">Save:</label>
+              <input type="number" name="" id="saving-input" value="15">
+              <small class="error-msg-container" id="error-msg-saving">hello</small>
+              <div>
+                <span>%</span> 
+                <button class="btn-save" id="save-btn">Save</button>
+              </div>     
+            </div>
+            <h4>Saving Amount: <span id= "saved-amount">0.0</span></h4>
+            <h4>Remaining Balance: <span id= "last-balance"> 0</span></h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>        
+
+  <script src="./app/js/main.js"></script>
+</body>
+</html> 

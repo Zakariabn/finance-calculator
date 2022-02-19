@@ -1,0 +1,224 @@
+:root {
+  /* font */
+  --main-font: 'Roboto', sans-serif;
+
+  /* color  */
+  --bg-color: #E5E5E5;
+
+  --white: #F8F8F8;
+  --gray-color: #DCDCDC;
+  --blue: #59A5FF;
+}
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--bg-color);
+}
+/* global style */
+input {
+  border-radius: 2px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* header style */
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* main style */
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* finance calculator section */
+.finance-calc-sec {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  background: url('../asset/image/dollor~1.png');
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+}
+
+.finance-calc-sec .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+.finance-calc-sec .container .visual {
+  background-image: url("../asset/image/calculator.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.finance-calc-sec .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--white);
+}
+.finance-calc-sec .content .income{
+  margin-bottom: 1rem;
+
+}
+.form-control {
+  width: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: .5rem 0 1.5rem;
+  position: relative;
+}
+.error-msg-container {
+  width: 174px;
+  text-align: start;
+  position:absolute;
+  top: 25px;
+  left: 79px;
+  display: none;
+  color: rgb(255, 51, 0);
+}
+.form-control label{
+  margin-right: 1rem;
+}
+.form-control input{
+  width: 120px;
+  height: 25px;
+  border: none;
+  padding: 0 .5rem;
+  background-color: var(--gray-color);
+}
+.form-control input:focus{
+  outline: none;
+}
+
+/* expenses  */
+.finance-calc-sec .content .expenses{
+  margin-bottom: 1rem;
+
+}
+
+/*  */
+.btn-calculate {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 1px 2px 1px #447ec5e1;
+}
+.btn-calculate:hover {
+  cursor: pointer;
+}
+.btn-calculate:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+/* total calculation  */
+.total {
+  margin: 1rem;
+  position: relative;
+}
+.total .error-msg-container{
+  position: absolute;
+  top: 16px;
+  left: 2px;
+}
+
+.total h4{
+  margin-bottom: 1.6rem;
+}
+
+/* saving */
+.saving{
+  position: relative;
+}
+
+.saving input{
+  width: 70px;
+  height: 27px;
+  margin: 0 1rem;
+  text-align: center;
+  border: none;
+  background-color: var(--gray-color);
+  
+}
+.saving input:focus {
+  outline: none;
+  
+}
+.saving .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+/* saving btn style */
+.btn-save {
+  padding: .3rem 2rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--blue);
+  box-shadow: 1px 2px 1px #417dc7cc;
+}
+.btn-save:hover {
+  cursor: pointer;
+}
+.btn-save:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.saving h4 {
+  margin: 1rem 0rem;
+}
+.saving .error-msg-container {
+  position: absolute;
+  text-align: center;
+  width: 252px;
+  top: 35px;
+  left: 34px;
+}
+
+@media (max-width: 690px) {
+  .finance-calc-sec .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) ;
+    column-gap: 2rem;
+  }
+}
