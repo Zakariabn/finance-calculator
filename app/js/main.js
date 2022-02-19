@@ -60,7 +60,6 @@ function getExpensesAndBalance () {
     return [totalExpenses, balance];
   }
 }
-finance-calculator
 // event listener
 const calculateBtn = document.querySelector('#calculate-btn');
 
