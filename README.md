@@ -1,5 +1,3 @@
-# Money Master Assignment
+## Live Link
+> https://finace-calculator.netlify.app/
 
-## [https://classroom.github.com/a/zFLvvYwR](https://classroom.github.com/a/zFLvvYwR)
-
-### Private Repo Link: [https://classroom.github.com/a/zFLvvYwR](https://classroom.github.com/a/zFLvvYwR)
